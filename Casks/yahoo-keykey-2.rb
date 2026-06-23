@@ -1,8 +1,8 @@
 cask "yahoo-keykey-2" do
   version "1.3.2"
-  sha256 "a6d5f44ebb576518fbe04fccd3736f6e7806969281e535aaee41c1c85c443508"
+  sha256 "dbf5b595b6d19c09f2cef0a6e450c343493af4a31e76c0e88871d727893e0227"
 
-  url "https://github.com/teddychan/yahoo-keykey-2/releases/download/v#{version}/YahooKeyKey2-#{version}.dmg",
+  url "https://github.com/teddychan/yahoo-keykey-2/releases/download/v#{version}/YahooKeyKey2-#{version}.zip",
       verified: "github.com/teddychan/yahoo-keykey-2/"
   name "Yahoo KeyKey 2"
   desc "Cangjie and Simplex Traditional Chinese input method"
