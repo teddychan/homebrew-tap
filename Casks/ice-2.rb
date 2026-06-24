@@ -2,8 +2,7 @@ cask "ice-2" do
   version "2.0.0"
   sha256 "3bbfbd3b2539d08fd5003e08583e02871ca610f3e163e3b7156850122c9340e8"
 
-  url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-v#{version}.zip",
-      verified: "github.com/teddychan/ice-2/"
+  url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-v#{version}.zip"
   name "Ice 2"
   desc "Menu bar manager"
   homepage "https://github.com/teddychan/ice-2"
