@@ -1,15 +1,15 @@
 cask "ice-2" do
-  version "2.0.0"
-  sha256 "3bbfbd3b2539d08fd5003e08583e02871ca610f3e163e3b7156850122c9340e8"
+  version "2.0.1"
+  sha256 "f12d73e0a382c8fde2751766e99fc327892a2dfd3437f8466a5bbe9280cb281d"
 
-  url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-v#{version}.zip"
+  url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-2-v#{version}.zip"
   name "Ice 2"
   desc "Menu bar manager"
   homepage "https://github.com/teddychan/ice-2"
 
   depends_on macos: :sonoma
 
-  app "Ice.app"
+  app "Ice 2.app"
 
   uninstall quit: "com.jordanbaird.Ice"
 
