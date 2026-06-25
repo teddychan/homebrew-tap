@@ -7,6 +7,11 @@ cask "ice-2" do
   desc "Menu bar manager"
   homepage "https://github.com/teddychan/ice-2"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on macos: :sonoma
 
   app "Ice 2.app"
