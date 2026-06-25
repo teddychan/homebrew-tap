@@ -6,7 +6,7 @@ cask "yahoo-keykey-2" do
       verified: "github.com/teddychan/yahoo-keykey-2/"
   name "Yahoo KeyKey 2"
   desc "Cangjie and Simplex Traditional Chinese input method"
-  homepage "https://www.dragonapp.com/keykey/"
+  homepage "https://www.dragonapp.com/yahoo-keykey-2/"
 
   depends_on arch: :arm64
   depends_on macos: :monterey
