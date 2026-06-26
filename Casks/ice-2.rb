@@ -1,6 +1,6 @@
 cask "ice-2" do
-  version "2.4.1"
-  sha256 "3291d9dcea2d74b9a145fe21ccb792d2c89f341f882edd4e2a8d2c48981f31ce"
+  version "2.5.1"
+  sha256 "4b4eeb57f1cceeb8c34eb85ae19f801430afe1b7222a67be137cf3a820f910a1"
 
   url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-2-v#{version}.zip"
   name "Ice 2"
