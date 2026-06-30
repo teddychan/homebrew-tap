@@ -1,6 +1,6 @@
 cask "yahoo-keykey-2" do
-  version "1.7.1"
-  sha256 "39b118ef3cbb63b9e1058af4e1f27fe21e521a33602fea3ca7a7f13f79517930"
+  version "1.7.2"
+  sha256 "1ddc6b7592668cad4dbb04fa0f31f617c42ec8891221aae7d09c7f9d6a09d85a"
 
   url "https://github.com/teddychan/yahoo-keykey-2/releases/download/v#{version}/YahooKeyKey2-#{version}.zip",
       verified: "github.com/teddychan/yahoo-keykey-2/"
