@@ -9,7 +9,11 @@ cask "yahoo-keykey-2" do
   homepage "https://www.dragonapp.com/yahoo-keykey-2/"
 
   depends_on arch: :arm64
-  depends_on macos: ">= 26"
+  # The app requires macOS 26 (Tahoe), enforced by its LSMinimumSystemVersion.
+  # Homebrew here has no :tahoe symbol and rejects "26"/comparison strings, so the
+  # macOS floor can't be declared yet — re-add `depends_on macos: :tahoe` once supported.
+
+  depends_on :macos
 
   app "YahooKeyKey2.app", target: "~/Library/Input Methods/YahooKeyKey2.app"
 
