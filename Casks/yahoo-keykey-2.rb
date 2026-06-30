@@ -9,16 +9,16 @@ cask "yahoo-keykey-2" do
   homepage "https://www.dragonapp.com/yahoo-keykey-2/"
 
   depends_on arch: :arm64
-  depends_on macos: :monterey
+  depends_on macos: ">= 26"
 
   app "YahooKeyKey2.app", target: "~/Library/Input Methods/YahooKeyKey2.app"
 
-  uninstall quit: "com.github.teddychan.inputmethod.YahooKeyKey2"
+  uninstall quit: "com.dragonapp.inputmethod.yahoo-keykey"
 
   zap trash: [
-    "~/Library/Caches/com.github.teddychan.inputmethod.YahooKeyKey2",
-    "~/Library/HTTPStorages/com.github.teddychan.inputmethod.YahooKeyKey2",
-    "~/Library/Preferences/com.github.teddychan.inputmethod.YahooKeyKey2.plist",
+    "~/Library/Caches/com.dragonapp.inputmethod.yahoo-keykey",
+    "~/Library/HTTPStorages/com.dragonapp.inputmethod.yahoo-keykey",
+    "~/Library/Preferences/com.dragonapp.inputmethod.yahoo-keykey.plist",
   ]
 
   caveats <<~EOS
