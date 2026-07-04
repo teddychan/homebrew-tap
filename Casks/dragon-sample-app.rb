@@ -1,6 +1,6 @@
 cask "dragon-sample-app" do
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "9c9d042e18719c6ff16f75bcf3afe59860cacd575ef5520412e3d1ba8755f1e5"
 
   url "https://github.com/teddychan/dragon-kit/releases/download/sample-v#{version}/DragonSampleApp-sample-v#{version}.zip",
       verified: "github.com/teddychan/dragon-kit/"
