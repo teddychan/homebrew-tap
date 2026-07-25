@@ -15,10 +15,11 @@ cask "spectacle-2" do
   uninstall quit: "com.dragonapp.spectacle-2"
 
   zap trash: [
-    "~/Library/Application Support/com.dragonapp.spectacle-2",
+    "~/Library/Application Support/Spectacle 2",
     "~/Library/Caches/com.dragonapp.spectacle-2",
     "~/Library/HTTPStorages/com.dragonapp.spectacle-2",
     "~/Library/Preferences/com.dragonapp.spectacle-2.plist",
+    "~/Library/Preferences/com.dragonapp.spectacle-2.settings.plist",
     "~/Library/Saved Application State/com.dragonapp.spectacle-2.savedState",
   ]
 end

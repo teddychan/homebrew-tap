@@ -16,13 +16,13 @@ cask "ice-2" do
 
   app "Ice 2.app"
 
-  uninstall quit: "com.jordanbaird.Ice"
+  uninstall quit: "com.dragonapp.ice"
 
   zap trash: [
-    "~/Library/Application Support/com.jordanbaird.Ice",
-    "~/Library/Caches/com.jordanbaird.Ice",
-    "~/Library/HTTPStorages/com.jordanbaird.Ice",
-    "~/Library/Preferences/com.jordanbaird.Ice.plist",
-    "~/Library/Saved Application State/com.jordanbaird.Ice.savedState",
+    "~/Library/Application Support/com.dragonapp.ice",
+    "~/Library/Caches/com.dragonapp.ice",
+    "~/Library/HTTPStorages/com.dragonapp.ice",
+    "~/Library/Preferences/com.dragonapp.ice.plist",
+    "~/Library/Saved Application State/com.dragonapp.ice.savedState",
   ]
 end
