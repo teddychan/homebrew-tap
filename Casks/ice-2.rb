@@ -12,7 +12,8 @@ cask "ice-2" do
     strategy :github_latest
   end
 
-  depends_on macos: :sonoma
+  depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "Ice 2.app"
 
