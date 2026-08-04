@@ -1,6 +1,6 @@
 cask "clipmenu-2" do
-  version "2.18.1"
-  sha256 "11a136b40d1a4519e8584238794a01dc8ee208fa77a4d8c04a9af41acbd0cdc9"
+  version "2.19.0"
+  sha256 "925b750ecfd94c36ab9718263e4d47fa38e311214537059cc2181c97466ce5f3"
 
   url "https://github.com/teddychan/ClipMenu-2/releases/download/v#{version}/ClipMenu-2-v#{version}.zip",
       verified: "github.com/teddychan/ClipMenu-2/"
