@@ -1,6 +1,6 @@
 cask "dragon-sample-app" do
-  version "1.2.0"
-  sha256 "bd699e1b87be9a12945ee290da308c216cea384cd4215d2a4a3caffb03ee763a"
+  version "1.3.0"
+  sha256 "3dbe95bae8831b1652bc730d68e5063700fcaa20b332fd071f61917f3aeab617"
 
   url "https://github.com/teddychan/dragon-kit/releases/download/sample-v#{version}/DragonSampleApp-sample-v#{version}.zip",
       verified: "github.com/teddychan/dragon-kit/"
