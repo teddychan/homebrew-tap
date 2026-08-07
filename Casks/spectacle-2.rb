@@ -1,6 +1,6 @@
 cask "spectacle-2" do
-  version "2.4.0"
-  sha256 "b8eb183105e6ff1a91295feb64ad8dc44f76900308402c7803b593906f4011e6"
+  version "2.4.1"
+  sha256 "97f2483fbf4f52eb51dc6c171069f2ff978026576b6e1136b1d94540bfceffa9"
 
   url "https://github.com/teddychan/spectacle-2/releases/download/v#{version}/Spectacle2-v#{version}.zip"
   name "Spectacle 2"
