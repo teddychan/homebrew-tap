@@ -13,10 +13,16 @@ cask "dragon-sample-app" do
 
   app "Dragon Sample App.app"
 
+  # See clipmenu-2: without quit:, cfprefsd resurrects the plist --zap just deleted.
+  uninstall quit: "com.dragonapp.dragon-sample-app"
+
   zap trash: [
-    "~/Library/Application Support/com.dragonapp.dragon-sample-app",
     "~/Library/Caches/com.dragonapp.dragon-sample-app",
     "~/Library/HTTPStorages/com.dragonapp.dragon-sample-app",
     "~/Library/Preferences/com.dragonapp.dragon-sample-app.plist",
+    # DragonSettingsStore's suite (<bundle id> + ".settings") holds 100% of the app's settings
+    # and was missing, so --zap left every preference behind.
+    "~/Library/Preferences/com.dragonapp.dragon-sample-app.settings.plist",
+    "~/Library/Saved Application State/com.dragonapp.dragon-sample-app.savedState",
   ]
 end
