@@ -15,10 +15,20 @@ cask "yahoo-keykey-2" do
 
   uninstall quit: "com.dragonapp.inputmethod.yahoo-keykey"
 
+  # Entries are alphabetized because Homebrew's Cask/ArrayAlphabetization cop requires it, so
+  # the two legacy bundle ids below sit interleaved rather than grouped at the end.
   zap trash: [
+    # user-frequency.json — a per-character record of what the user typed. Name-keyed
+    # (UserFrequency.swift:30), so no bundle-id path ever covered it.
+    "~/Library/Application Support/YahooKeyKey2",
     "~/Library/Caches/com.dragonapp.inputmethod.yahoo-keykey",
     "~/Library/HTTPStorages/com.dragonapp.inputmethod.yahoo-keykey",
+    # com.github.teddychan.inputmethod.YahooKeyKey2 — shipped v1.2.1…v1.7.0.
+    "~/Library/HTTPStorages/com.github.teddychan.inputmethod.YahooKeyKey2",
     "~/Library/Preferences/com.dragonapp.inputmethod.yahoo-keykey.plist",
+    # com.dragonapp.yahoo-keykey — shipped v1.7.1…v2.0.0. Both legacy ids are verified present
+    # on a machine that upgraded through them, so a long-time user still has these.
+    "~/Library/Preferences/com.dragonapp.yahoo-keykey.plist",
   ]
 
   caveats <<~EOS
