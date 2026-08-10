@@ -2,8 +2,16 @@ cask "dragon-sample-app" do
   version "1.4.2"
   sha256 "30a5986f41ef8b6b29c86acadb0065a0e12f03c97c103e58ffa164712b953263"
 
-  url "https://github.com/teddychan/dragon-kit/releases/download/sample-v#{version}/DragonSampleApp-sample-v#{version}.zip",
-      verified: "github.com/teddychan/dragon-kit/"
+  # Releases moved out of dragon-kit: one repository may own only one public vX.Y.Z series, and
+  # dragon-kit's belongs to the Swift package, so the sample-v* family is retired
+  # (dragon-kit/docs/MAC-APP-RELEASE-LIFECYCLE.md). Both the repo and the tag shape change here.
+  #
+  # This lagged one release behind by mistake. The release CI rewrites only the `version` and
+  # `sha256` lines, so when v1.4.2 shipped from the new repo it bumped those against this stale
+  # url and left the cask resolving to a 404. Holding the url fix back to avoid a brief window
+  # where 1.4.0 was unfetchable produced a worse, live breakage at the current version.
+  url "https://github.com/teddychan/dragon-sample-app/releases/download/v#{version}/DragonSampleApp-v#{version}.zip",
+      verified: "github.com/teddychan/dragon-sample-app/"
   name "Dragon Sample App"
   desc "Reference menu-bar app showcasing the DragonKit modules"
   homepage "https://www.dragonapp.com/"
