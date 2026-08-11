@@ -1,6 +1,6 @@
 cask "dragon-sample-app" do
-  version "1.4.3"
-  sha256 "a516ba7fae007f6915f6acf5d0bcf92fda00cdadf881434d6e7a0404f2d4a9df"
+  version "1.4.4"
+  sha256 "4abdbef464eaf31de4506c487aa9d5223679ee0a767e468cb662311789cf4edf"
 
   # Releases moved out of dragon-kit: one repository may own only one public vX.Y.Z series, and
   # dragon-kit's belongs to the Swift package, so the sample-v* family is retired
