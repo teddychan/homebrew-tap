@@ -8,6 +8,7 @@ cask "yahoo-keykey-2" do
   desc "Cangjie and Simplex Traditional Chinese input method"
   homepage "https://www.dragonapp.com/yahoo-keykey-2/"
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
