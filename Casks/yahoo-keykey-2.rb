@@ -4,7 +4,7 @@ cask "yahoo-keykey-2" do
 
   url "https://github.com/teddychan/yahoo-keykey-2/releases/download/v#{version}/YahooKeyKey2-#{version}.zip",
       verified: "github.com/teddychan/yahoo-keykey-2/"
-  name "Yahoo KeyKey 2"
+  name "Yahoo! KeyKey 2"
   desc "Cangjie and Simplex Traditional Chinese input method"
   homepage "https://www.dragonapp.com/yahoo-keykey-2/"
 
@@ -33,7 +33,7 @@ cask "yahoo-keykey-2" do
   ]
 
   caveats <<~EOS
-    Yahoo KeyKey 2 is a Traditional Chinese input method. To finish setup:
+    Yahoo! KeyKey 2 is a Traditional Chinese input method. To finish setup:
 
       1. Log out and back in — macOS only registers input methods at login.
       2. Open  System Settings ▸ Keyboard ▸ Input Sources ▸ +  ▸ Traditional Chinese

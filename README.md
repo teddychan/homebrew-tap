@@ -14,7 +14,7 @@ which is why `teddychan/tap` resolves to `teddychan/homebrew-tap`.
 | `dragon-sample-app` | Dragon Sample App — reference menu-bar app showcasing the DragonKit modules | no product page — see https://github.com/teddychan/dragon-sample-app |
 | `ice-2` | Ice 2 — menu bar manager | https://www.dragonapp.com/ice-2/ |
 | `spectacle-2` | Spectacle 2 — move and resize windows with keyboard shortcuts | https://www.dragonapp.com/spectacle-2/ |
-| `yahoo-keykey-2` | Yahoo KeyKey 2 — Cangjie & Simplex Traditional Chinese input method | https://www.dragonapp.com/yahoo-keykey-2/ |
+| `yahoo-keykey-2` | Yahoo! KeyKey 2 — Cangjie & Simplex Traditional Chinese input method | https://www.dragonapp.com/yahoo-keykey-2/ |
 
 ## Install
 
