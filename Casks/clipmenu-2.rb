@@ -2,8 +2,7 @@ cask "clipmenu-2" do
   version "2.21.2"
   sha256 "26019ab662df452f9621ce229251a4d6b09b33a76732febce01637794bf28c8f"
 
-  url "https://github.com/teddychan/ClipMenu-2/releases/download/v#{version}/ClipMenu-2-v#{version}.zip",
-      verified: "github.com/teddychan/ClipMenu-2/"
+  url "https://github.com/teddychan/ClipMenu-2/releases/download/v#{version}/ClipMenu-2-v#{version}.zip"
   name "ClipMenu 2"
   desc "Clipboard-history menu-bar app"
   homepage "https://www.dragonapp.com/"

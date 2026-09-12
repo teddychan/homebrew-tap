@@ -10,8 +10,7 @@ cask "dragon-sample-app" do
   # `sha256` lines, so when v1.4.2 shipped from the new repo it bumped those against this stale
   # url and left the cask resolving to a 404. Holding the url fix back to avoid a brief window
   # where 1.4.0 was unfetchable produced a worse, live breakage at the current version.
-  url "https://github.com/teddychan/dragon-sample-app/releases/download/v#{version}/DragonSampleApp-v#{version}.zip",
-      verified: "github.com/teddychan/dragon-sample-app/"
+  url "https://github.com/teddychan/dragon-sample-app/releases/download/v#{version}/DragonSampleApp-v#{version}.zip"
   name "Dragon Sample App"
   desc "Reference menu-bar app showcasing the DragonKit modules"
   homepage "https://www.dragonapp.com/"
