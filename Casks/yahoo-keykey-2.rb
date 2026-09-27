@@ -11,7 +11,15 @@ cask "yahoo-keykey-2" do
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  app "YahooKeyKey2.app", target: "~/Library/Input Methods/YahooKeyKey2.app"
+  # For all users, not ~/Library: while another app holds macOS secure input (1Password leaks it
+  # across a screen lock), macOS only lets input methods under /Library/Input Methods through.
+  # Root-owned, because a user-writable bundle there could be tampered with by user-level code, and
+  # Sparkle runs its installer from inside the bundle as root on every authorized update.
+  app "YahooKeyKey2.app", target: "/Library/Input Methods/YahooKeyKey2.app"
+
+  postflight_steps do
+    set_ownership "/Library/Input Methods/YahooKeyKey2.app", user: "root", group: "wheel"
+  end
 
   uninstall quit: "com.dragonapp.inputmethod.yahoo-keykey"
 
@@ -32,11 +40,16 @@ cask "yahoo-keykey-2" do
   ]
 
   caveats <<~EOS
-    Yahoo! KeyKey 2 is a Traditional Chinese input method. To finish setup:
+    Yahoo! KeyKey 2 is a Traditional Chinese input method, installed for all users in
+    /Library/Input Methods so it keeps working when another app turns on secure input.
+    To finish setup:
 
       1. Log out and back in — macOS only registers input methods at login.
-      2. Open  System Settings ▸ Keyboard ▸ Input Sources ▸ +  ▸ Traditional Chinese
-         and add 倉頡 (Cangjie) and/or 速成 (Simplex).
+      2. Open  System Settings ▸ Keyboard ▸ Input Sources ▸ Edit… ▸ +  ▸ Traditional Chinese
+         and add 倉頡 (Cangjie), 速成 (Simplex), 注音 (Zhuyin) and/or 拼音 (Pinyin).
       3. Switch to it with Ctrl-Space.
+
+    Updates ask for an administrator password, because /Library/Input Methods belongs to the
+    system.
   EOS
 end
