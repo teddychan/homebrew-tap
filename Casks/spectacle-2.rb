@@ -2,10 +2,10 @@ cask "spectacle-2" do
   version "2.5.7"
   sha256 "5032e14de361b30065ba096cd9535c9ea512c8557afc5683b1062ff39e3bc6e6"
 
-  url "https://github.com/teddychan/spectacle-2/releases/download/v#{version}/Spectacle2-v#{version}.zip"
+  url "https://github.com/teddychan/spectacle-2-macos/releases/download/v#{version}/Spectacle2-v#{version}.zip"
   name "Spectacle 2"
   desc "Move and resize windows with keyboard shortcuts"
-  homepage "https://github.com/teddychan/spectacle-2"
+  homepage "https://github.com/teddychan/spectacle-2-macos"
 
   auto_updates true
   depends_on macos: :tahoe

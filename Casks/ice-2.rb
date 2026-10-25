@@ -2,10 +2,10 @@ cask "ice-2" do
   version "2.16.1"
   sha256 "d38f7e687edf0b5442023028c6b68c275248718f407afafa3acb3d85882e87b1"
 
-  url "https://github.com/teddychan/ice-2/releases/download/v#{version}/Ice-2-v#{version}.zip"
+  url "https://github.com/teddychan/ice-2-macos/releases/download/v#{version}/Ice-2-v#{version}.zip"
   name "Ice 2"
   desc "Menu bar manager"
-  homepage "https://github.com/teddychan/ice-2"
+  homepage "https://github.com/teddychan/ice-2-macos"
 
   livecheck do
     url :url

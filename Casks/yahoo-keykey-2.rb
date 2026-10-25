@@ -2,7 +2,7 @@ cask "yahoo-keykey-2" do
   version "2.16.2"
   sha256 "82f1a05dfbdcadf029ce94dfff3a3c3beea03303e388c639f2a73f46b3377e08"
 
-  url "https://github.com/teddychan/yahoo-keykey-2/releases/download/v#{version}/YahooKeyKey2-#{version}.zip"
+  url "https://github.com/teddychan/yahoo-keykey-2-macos/releases/download/v#{version}/YahooKeyKey2-#{version}.zip"
   name "Yahoo! KeyKey 2"
   desc "Cangjie and Simplex Traditional Chinese input method"
   homepage "https://www.dragonapp.com/yahoo-keykey-2/"
