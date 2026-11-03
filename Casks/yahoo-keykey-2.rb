@@ -1,6 +1,6 @@
 cask "yahoo-keykey-2" do
-  version "2.16.2"
-  sha256 "82f1a05dfbdcadf029ce94dfff3a3c3beea03303e388c639f2a73f46b3377e08"
+  version "2.16.3"
+  sha256 "989174ae144becbd3fd79b586605683622b3c7b9e768c6025698dbfc4b4a3e4b"
 
   url "https://github.com/teddychan/yahoo-keykey-2-macos/releases/download/v#{version}/YahooKeyKey2-#{version}.zip"
   name "Yahoo! KeyKey 2"
