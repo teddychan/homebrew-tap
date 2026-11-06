@@ -12,6 +12,7 @@ which is why `teddychan/tap` resolves to `teddychan/homebrew-tap`.
 |------|-----|------|
 | `clipmenu-2` | ClipMenu 2 — clipboard-history menu-bar app | https://www.dragonapp.com/clipmenu-2/ |
 | `dragon-sample-app` | Dragon Sample App — reference menu-bar app showcasing the DragonKit modules | no product page — see https://github.com/teddychan/dragon-sample-app |
+| `handfree` | HandFree — dictation that types cleaned-up text where the cursor is | no product page yet |
 | `ice-2` | Ice 2 — menu bar manager | https://www.dragonapp.com/ice-2/ |
 | `spectacle-2` | Spectacle 2 — move and resize windows with keyboard shortcuts | https://www.dragonapp.com/spectacle-2/ |
 | `yahoo-keykey-2` | Yahoo! KeyKey 2 — Cangjie & Simplex Traditional Chinese input method | https://www.dragonapp.com/yahoo-keykey-2/ |
@@ -21,6 +22,7 @@ which is why `teddychan/tap` resolves to `teddychan/homebrew-tap`.
 ```sh
 brew install --cask teddychan/tap/clipmenu-2
 brew install --cask teddychan/tap/dragon-sample-app
+brew install --cask teddychan/tap/handfree
 brew install --cask teddychan/tap/ice-2
 brew install --cask teddychan/tap/spectacle-2
 brew install --cask teddychan/tap/yahoo-keykey-2
@@ -32,6 +34,7 @@ That one command auto-taps this repo and installs the latest notarized build. Eq
 brew tap teddychan/tap
 brew install --cask clipmenu-2
 brew install --cask dragon-sample-app
+brew install --cask handfree
 brew install --cask ice-2
 brew install --cask spectacle-2
 brew install --cask yahoo-keykey-2
@@ -42,6 +45,7 @@ brew install --cask yahoo-keykey-2
 ```sh
 brew upgrade --cask clipmenu-2
 brew upgrade --cask dragon-sample-app
+brew upgrade --cask handfree
 brew upgrade --cask ice-2
 brew upgrade --cask spectacle-2
 brew upgrade --cask yahoo-keykey-2
@@ -56,8 +60,9 @@ cask bypasses the skip.)
 
 These apps also update themselves via Sparkle, so an app that has already
 self-updated can leave Homebrew's recorded version stale — that's expected, not a
-fault. Every cask here is bumped automatically after each release: the app's
-release CI opens a PR against this repo and merges it itself.
+fault. Every Dragon App cask is bumped automatically after each release: the app's
+release CI opens a PR against this repo and merges it itself. HandFree has no
+release CI, so its cask is bumped by hand as part of each release.
 
 ## Uninstall
 
@@ -67,6 +72,9 @@ brew uninstall --zap --cask clipmenu-2    # also remove preferences and caches
 
 brew uninstall --cask dragon-sample-app
 brew uninstall --zap --cask dragon-sample-app
+
+brew uninstall --cask handfree
+brew uninstall --zap --cask handfree
 
 brew uninstall --cask ice-2
 brew uninstall --zap --cask ice-2
