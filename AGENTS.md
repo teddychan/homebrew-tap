@@ -1,11 +1,12 @@
 # AGENTS.md
 
-Homebrew tap (`teddychan/tap`) holding the casks for the Dragon Apps: ClipMenu 2, Dragon Sample App, Ice 2, Spectacle 2 and Yahoo! KeyKey 2.
+Homebrew tap (`teddychan/tap`) holding the casks for the Dragon Apps (ClipMenu 2, Dragon Sample App, Ice 2, Spectacle 2 and Yahoo! KeyKey 2) and HandFree.
 
 ## Project rules
 
 ### Editing casks
 
+- `Casks/handfree.rb` has no release CI behind it: its `version` and `sha256` are bumped by hand with each HandFree release. Its zip is on `teddychan/www.dragonapp.com` releases (tag `handfree-macos-v<version>`).
 - Release CI only bumps `version` and `sha256`. Every other stanza (`depends_on`, `uninstall`, `zap`) is hand-maintained and persists across releases, so fix it in the cask file directly.
 - Declare a macOS 26 floor as `depends_on macos: :tahoe`. The string forms (`">= 26"`, `"26"`) are rejected when the cask loads.
 - Declare `depends_on arch: :arm64` for any app that ships an arm64-only build; leaving it out lets Homebrew install a build that cannot launch, the same class of bug as a missing macOS floor.
@@ -22,8 +23,10 @@ Homebrew tap (`teddychan/tap`) holding the casks for the Dragon Apps: ClipMenu 2
   mkdir -p "$T/Casks" && cp Casks/<cask>.rb "$T/Casks/"
   git -C "$T" init -q && git -C "$T" add -A
   git -C "$T" -c user.name="Teddy Chan" -c user.email=1013507+teddychan@users.noreply.github.com commit -qm scratch
+  brew trust scratchcheck/tapcheck   # current Homebrew refuses to load casks from an untrusted tap
   brew audit --cask --online --strict scratchcheck/tapcheck/<cask>
   brew info --cask scratchcheck/tapcheck/<cask>
+  brew untrust scratchcheck/tapcheck
   rm -rf "$(brew --repository)/Library/Taps/scratchcheck"
   ```
 
