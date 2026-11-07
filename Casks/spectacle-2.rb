@@ -1,6 +1,6 @@
 cask "spectacle-2" do
-  version "2.8.2"
-  sha256 "1e5d48509f6f265821b0e0c4283f5b08ee384fc10d2d773ba037788d701e04c9"
+  version "2.9.0"
+  sha256 "98c9242db77b3e810fd0f2f28562bd07371ec01e1517e82f0f30d3c0f3515699"
 
   url "https://github.com/teddychan/spectacle-2-macos/releases/download/v#{version}/Spectacle2-v#{version}.zip"
   name "Spectacle 2"
