@@ -1,6 +1,6 @@
 cask "clipmenu-2" do
-  version "2.24.0"
-  sha256 "68fb1fca8b42f8b7d202f34d606c63d54643d909a7b01e38bb07ac22b4716770"
+  version "2.24.2"
+  sha256 "04a1b7c50cfe49e67f8ce3925959f360a0948f65ad80cefd24ca38b7842b6f4f"
 
   url "https://github.com/teddychan/clipmenu-2-macos/releases/download/v#{version}/ClipMenu-2-v#{version}.zip"
   name "ClipMenu 2"
