@@ -1,6 +1,6 @@
 cask "handfree" do
-  version "3.1.0"
-  sha256 "43d88e23c952971a58c09813ecee94fc43f44692f00145c3ccac388ea2308790"
+  version "3.2.0"
+  sha256 "8f29103aacfeedc54dd2993a34da8ca69d281dd4aae0373332dcab29c3f60d71"
 
   url "https://github.com/teddychan/www.dragonapp.com/releases/download/handfree-macos-v#{version}/HandFree-#{version}.zip"
   name "HandFree"
